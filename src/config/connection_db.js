@@ -1,10 +1,17 @@
-import mysql from 'mysql2';
+import mysql from "mysql2/promise";
 
-// create the connection to database
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database: 'nodejs_basic'
+// create the connection to database callback
+// const connection = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     database: 'nodejs_basic'
+// });
+
+//promise database
+const pool = mysql.createPool({
+  host: "localhost",
+  user: "root",
+  database: "nodejs_basic",
 });
 
 // simple query
@@ -16,4 +23,4 @@ const connection = mysql.createConnection({
 //     }
 // );
 
-export default connection;
+export default pool;

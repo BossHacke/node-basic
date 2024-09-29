@@ -36,11 +36,11 @@ a {
 }
 
 /* header */
-.header{
+.header {
     background: #fffcf4;
 }
 
-.header .pixel{
+.header .pixel {
     position: sticky;
     top: -28;
 }
@@ -84,6 +84,36 @@ a {
     min-width: 144px;
 }
 
-.header .action{
+.header .action {
     margin-left: 49px;
+}
+
+.create-user-container {
+    text-align: center;
+}
+
+.create-user-container label {
+    display: block;
+}
+
+.create-user-container h1 {
+    font-weight: bold;
+}
+
+.create-user-container .btn-submit {
+    margin-top: 1.5rem;
+}
+
+td .crud {
+    display: flex;
+}
+
+.update-users-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.update-users-container label {
+    display: block;
+    padding: 0.8rem;
 }
