@@ -57,18 +57,17 @@
             </div>
         </form>
         <!-- import đx nhìu file -->
-        <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data"></form>
-        <div>
-            <h3>Upload Multiple Files</h3>
+        <form action="/upload-multiple-images" enctype="multipart/form-data" method="post">
             <div>
-                <span>Select multiple images:</span>
-                <input type="file" name="multiple_images" multiple />
+                <h3>Upload Multiple Files</h3>
+                <div>
+                    <span>Select multiple images:</span>
+                    <input type="file" name="multiple_images" multiple />
+                </div>
             </div>
-
-        </div>
-        <div>
-            <input type="submit" name="btn_upload_multiple_images" value="Upload" />
-        </div>
+            <div>
+                <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+            </div>
         </form>
     </div>
 </body>
