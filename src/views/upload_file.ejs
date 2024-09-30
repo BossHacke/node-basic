@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Nodejs basic</title>
+</head>
+
+<body>
+    <header class="header pixel">
+        <div class="main-content"></div>
+        <div class="body"> <!-- logo -->
+            <img src="./images/Logo.svg" alt="Lesson.">
+            <!-- navigation -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                </ul>
+                <ul>
+                    <li class="active">
+                        <a href="/upload">Upload file</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#!">Courses</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#!">Pricing</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#!">Reviews</a></li>
+                </ul>
+            </nav>
+            <!-- btn sign -->
+            <div class="action"><a href="" class="btn btn-sign-up">Sign Up</a></div>
+        </div>
+        </div>
+    </header>
+    <div class="upload-file-container">
+        <!-- import đx 1 file -->
+        <form action="/upload-profile-pic" enctype="multipart/form-data" method="post">
+            <div>
+                <label>Avatar</label>
+                <input type="file" name="profile_pic">
+            </div>
+            <div>
+                <button class="btn-save" type="submit">Save file</button>
+            </div>
+        </form>
+        <!-- import đx nhìu file -->
+        <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data"></form>
+        <div>
+            <h3>Upload Multiple Files</h3>
+            <div>
+                <span>Select multiple images:</span>
+                <input type="file" name="multiple_images" multiple />
+            </div>
+
+        </div>
+        <div>
+            <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
